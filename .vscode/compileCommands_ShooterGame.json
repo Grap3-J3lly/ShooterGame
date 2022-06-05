@@ -1,0 +1,892 @@
+[
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Bots\\\\BTDecorator_HasLoSTo.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Bots\\\\BTTask_FindPickup.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Bots\\\\BTTask_FindPointNearEnemy.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Bots\\\\ShooterAIController.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Bots\\\\ShooterBot.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\CharAbilities.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\CustomCharacter.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Effects\\\\ShooterExplosionEffect.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Effects\\\\ShooterImpactEffect.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Online\\\\ShooterGame_FreeForAll.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Online\\\\ShooterGame_Menu.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Online\\\\ShooterGame_TeamDeathMatch.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Online\\\\ShooterGameMode.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Online\\\\ShooterGameSession.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Online\\\\ShooterGameState.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Online\\\\ShooterOnlineGameMatches.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Online\\\\ShooterOnlineGameSettings.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Online\\\\ShooterOnlineGameSettings.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Online\\\\ShooterOnlineSessionClient.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Online\\\\ShooterPlayerState.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Online\\\\ShooterReplicationGraph.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Online\\\\ShooterReplicationGraph.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Pickups\\\\ShooterPickup.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Pickups\\\\ShooterPickup_Ammo.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Pickups\\\\ShooterPickup_Health.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Player\\\\ShooterCharacter.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Player\\\\ShooterCharacterMovement.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Player\\\\ShooterCheatManager.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Player\\\\ShooterDemoSpectator.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Player\\\\ShooterLocalPlayer.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Player\\\\ShooterPersistentUser.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Player\\\\ShooterPlayerCameraManager.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Player\\\\ShooterPlayerController.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Player\\\\ShooterPlayerController_Menu.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Player\\\\ShooterSpectatorPawn.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\ShooterEngine.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\ShooterGameDelegates.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\ShooterGameDelegates.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\ShooterGameInstance.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\ShooterGameModule.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\ShooterGameUserSettings.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\ShooterGameViewportClient.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\ShooterLeaderboards.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\ShooterTeamStart.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Sound\\\\SoundNodeLocalPlayer.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\TakeHitInfo.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Tests\\\\ShooterTestControllerBase.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Tests\\\\ShooterTestControllerBasicDedicatedServerTest.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Tests\\\\ShooterTestControllerBootTest.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Tests\\\\ShooterTestControllerDedicatedServerTest.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Tests\\\\ShooterTestControllerListenServerClient.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Tests\\\\ShooterTestControllerListenServerHost.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Tests\\\\ShooterTestControllerListenServerQuickMatchClient.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\ShooterDemoPlaybackMenu.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\ShooterDemoPlaybackMenu.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\ShooterFriends.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\ShooterFriends.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\ShooterIngameMenu.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\ShooterIngameMenu.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\ShooterMainMenu.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\ShooterMainMenu.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\ShooterMessageMenu.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\ShooterMessageMenu.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\ShooterOptions.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\ShooterOptions.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\ShooterRecentlyMet.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\ShooterRecentlyMet.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\ShooterWelcomeMenu.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\ShooterWelcomeMenu.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\Widgets\\\\ShooterMenuItem.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\Widgets\\\\SShooterDemoList.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\Widgets\\\\SShooterDemoList.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\Widgets\\\\SShooterLeaderboard.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\Widgets\\\\SShooterLeaderboard.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\Widgets\\\\SShooterMenuItem.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\Widgets\\\\SShooterMenuItem.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\Widgets\\\\SShooterMenuWidget.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\Widgets\\\\SShooterMenuWidget.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\Widgets\\\\SShooterOnlineStore.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\Widgets\\\\SShooterOnlineStore.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\Widgets\\\\SShooterServerList.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Menu\\\\Widgets\\\\SShooterServerList.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\ShooterHUD.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\ShooterHUDPCTrackerBase.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\ShooterHUDPCTrackerBase.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\ShooterUIHelpers.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\ShooterUIHelpers.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Style\\\\ShooterChatWidgetStyle.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Style\\\\ShooterChatWidgetStyle.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Style\\\\ShooterMenuItemWidgetStyle.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Style\\\\ShooterMenuItemWidgetStyle.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Style\\\\ShooterMenuSoundsWidgetStyle.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Style\\\\ShooterMenuSoundsWidgetStyle.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Style\\\\ShooterMenuWidgetStyle.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Style\\\\ShooterMenuWidgetStyle.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Style\\\\ShooterOptionsWidgetStyle.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Style\\\\ShooterOptionsWidgetStyle.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Style\\\\ShooterScoreboardWidgetStyle.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Style\\\\ShooterScoreboardWidgetStyle.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Style\\\\ShooterStyle.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Style\\\\ShooterStyle.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Widgets\\\\SChatWidget.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Widgets\\\\SChatWidget.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Widgets\\\\SShooterConfirmationDialog.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Widgets\\\\SShooterConfirmationDialog.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Widgets\\\\SShooterDemoHUD.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Widgets\\\\SShooterDemoHUD.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Widgets\\\\SShooterScoreboardWidget.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Widgets\\\\SShooterScoreboardWidget.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Widgets\\\\SShooterSplitScreenLobbyWidget.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\UI\\\\Widgets\\\\SShooterSplitScreenLobbyWidget.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Weapons\\\\ShooterDamageType.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Weapons\\\\ShooterProjectile.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Weapons\\\\ShooterWeapon.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Weapons\\\\ShooterWeapon_Instant.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\Weapons\\\\ShooterWeapon_Projectile.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Bots\\\\BTDecorator_HasLoSTo.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Bots\\\\BTTask_FindPickup.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Bots\\\\BTTask_FindPointNearEnemy.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Bots\\\\ShooterAIController.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Bots\\\\ShooterBot.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\CharAbilities.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\CustomCharacter.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Effects\\\\ShooterExplosionEffect.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Effects\\\\ShooterImpactEffect.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Online\\\\ShooterGame_FreeForAll.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Online\\\\ShooterGame_Menu.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Online\\\\ShooterGame_TeamDeathMatch.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Online\\\\ShooterGameMode.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Online\\\\ShooterGameSession.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Online\\\\ShooterGameState.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Online\\\\ShooterOnlineGameMatches.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Online\\\\ShooterOnlineSessionClient.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Online\\\\ShooterPlayerState.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Pickups\\\\ShooterPickup.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Pickups\\\\ShooterPickup_Ammo.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Pickups\\\\ShooterPickup_Health.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Player\\\\ShooterCharacter.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Player\\\\ShooterCharacterMovement.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Player\\\\ShooterCheatManager.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Player\\\\ShooterDemoSpectator.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Player\\\\ShooterLocalPlayer.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Player\\\\ShooterPersistentUser.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Player\\\\ShooterPlayerCameraManager.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Player\\\\ShooterPlayerController.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Player\\\\ShooterPlayerController_Menu.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Player\\\\ShooterSpectatorPawn.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\ShooterEngine.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\ShooterGame.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\ShooterGameInstance.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\ShooterGameUserSettings.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\ShooterGameViewportClient.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\ShooterTeamStart.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\ShooterTypes.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Sound\\\\SoundNodeLocalPlayer.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Tests\\\\ShooterTestControllerBase.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Tests\\\\ShooterTestControllerBasicDedicatedServerTest.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Tests\\\\ShooterTestControllerBootTest.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Tests\\\\ShooterTestControllerDedicatedServerTest.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Tests\\\\ShooterTestControllerListenServerClient.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Tests\\\\ShooterTestControllerListenServerHost.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Tests\\\\ShooterTestControllerListenServerQuickMatchClient.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\UI\\\\ShooterHUD.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Weapons\\\\ShooterDamageType.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Weapons\\\\ShooterProjectile.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Weapons\\\\ShooterWeapon.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Weapons\\\\ShooterWeapon_Instant.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\Weapons\\\\ShooterWeapon_Projectile.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Resources\\\\Mac\\\\Info.plist",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Resources\\\\Mac\\\\ShooterGame.icns",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Resources\\\\Windows\\\\ShooterGame.ico",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Resources\\\\Windows\\\\ShooterGame.rc",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\ShooterGame.Build.cs",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGameLoadingScreen\\\\Private\\\\ShooterGameLoadingScreen.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGameLoadingScreen.586.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGameLoadingScreen\\\\Public\\\\ShooterGameLoadingScreen.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGameLoadingScreen.586.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGameLoadingScreen\\\\ShooterGameLoadingScreen.Build.cs",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGameLoadingScreen.586.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "c:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\CustomCharMoveComp.cpp",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    },
+    {
+        "file": "c:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\CustomCharMoveComp.h",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_ShooterGame\\ShooterGame.221.rsp\"",
+        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
+    }
+]

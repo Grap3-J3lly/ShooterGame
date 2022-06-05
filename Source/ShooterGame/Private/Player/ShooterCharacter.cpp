@@ -884,6 +884,16 @@ void AShooterCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerI
 	PlayerInputComponent->BindAction("Run", IE_Pressed, this, &AShooterCharacter::OnStartRunning);
 	PlayerInputComponent->BindAction("RunToggle", IE_Pressed, this, &AShooterCharacter::OnStartRunningToggle);
 	PlayerInputComponent->BindAction("Run", IE_Released, this, &AShooterCharacter::OnStopRunning);
+
+	// --------------------------------------------------------
+	//						BOND EDIT
+	// --------------------------------------------------------
+
+	PlayerInputComponent->BindAction("Teleport", IE_Pressed, this, &AShooterCharacter::OnTeleport);
+	PlayerInputComponent->BindAction("Rewind", IE_Pressed, this, &AShooterCharacter::OnRewind);
+
+	// --------------------------------------------------------
+
 }
 
 
@@ -1066,6 +1076,22 @@ bool AShooterCharacter::IsRunning() const
 
 	return (bWantsToRun || bWantsToRunToggled) && !GetVelocity().IsZero() && (GetVelocity().GetSafeNormal2D() | GetActorForwardVector()) > -0.1;
 }
+
+// --------------------------------------------------------
+//			BOND: CUSTOM FUNCTIONS
+// --------------------------------------------------------
+
+void AShooterCharacter::OnTeleport() 
+{
+
+}
+
+void AShooterCharacter::OnRewind()
+{
+	UE_LOG(LogTemp, Warning, TEXT("ACTIVATED REWIND"));
+}
+
+// --------------------------------------------------------
 
 void AShooterCharacter::Tick(float DeltaSeconds)
 {
