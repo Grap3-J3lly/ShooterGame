@@ -1083,7 +1083,7 @@ bool AShooterCharacter::IsRunning() const
 
 void AShooterCharacter::OnTeleport() 
 {
-
+	UE_LOG(LogTemp, Warning, TEXT("ACTIVATED TELEPORT"));
 }
 
 void AShooterCharacter::OnRewind()
