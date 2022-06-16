@@ -30,7 +30,7 @@
         "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
     },
     {
-        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\CustomCharacter.cpp",
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\CharAbilitiesMovementComponent.cpp",
         "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_Default\\ShooterGame.221.rsp\"",
         "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
     },
@@ -610,7 +610,7 @@
         "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
     },
     {
-        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\CustomCharacter.h",
+        "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\CharAbilitiesMovementComponent.h",
         "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_Default\\ShooterGame.221.rsp\"",
         "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
     },
@@ -877,16 +877,6 @@
     {
         "file": "C:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGameLoadingScreen\\\\ShooterGameLoadingScreen.Build.cs",
         "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_Default\\ShooterGameLoadingScreen.586.rsp\"",
-        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
-    },
-    {
-        "file": "c:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Private\\\\CustomCharMoveComp.cpp",
-        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_Default\\ShooterGame.221.rsp\"",
-        "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
-    },
-    {
-        "file": "c:\\\\Development\\\\Git\\\\Reposities\\\\ShooterGame\\\\Source\\\\ShooterGame\\\\Public\\\\CustomCharMoveComp.h",
-        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe\" @\"C:\\Development\\Git\\Reposities\\ShooterGame\\.vscode\\compileCommands_Default\\ShooterGame.221.rsp\"",
         "directory": "C:\\Development\\Unreal\\UE_4.27\\Engine\\Source"
     }
 ]

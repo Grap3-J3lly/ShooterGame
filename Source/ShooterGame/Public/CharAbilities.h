@@ -11,9 +11,18 @@ class SHOOTERGAME_API ACharAbilities : public ACharacter
 {
 	GENERATED_BODY()
 
+	//------------------------------------------------------
+    //					CONSTRUCTORS
+    //------------------------------------------------------
+
 public:
 	// Sets default values for this character's properties
 	ACharAbilities();
+	ACharAbilities(const FObjectInitializer& ObjectInitializer);
+
+	//------------------------------------------------------
+    //				GENERAL FUNCTIONS
+    //------------------------------------------------------
 
 protected:
 	// Called when the game starts or when spawned
@@ -26,8 +35,17 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-private:
-	void Teleport();
+	//------------------------------------------------------
+    //				ABILITY FUNCTIONS
+    //------------------------------------------------------
+
+	void JumpPressed();
+	void JumpReleased();
+
+	void TeleportPressed();
+	void TeleportReleased();
+
+	void RewindPressed();
+	void RewindReleased();
 
 };
-
