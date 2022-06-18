@@ -186,12 +186,6 @@ class AShooterCharacter : public ACharacter
 	/** player pressed reload action */
 	void OnReload();
 
-	/** player pressed jump action */
-	void OnStartJump();
-
-	/** player released jump action */
-	void OnStopJump();
-
 	/** player pressed run action */
 	void OnStartRunning();
 
@@ -201,9 +195,22 @@ class AShooterCharacter : public ACharacter
 	/** player released run action */
 	void OnStopRunning();
 
-	void OnTeleport();
+	// --------------------------------------------------------
+	//						BOND EDIT
+	// --------------------------------------------------------
 
-	void OnRewind();
+	/** player pressed jump action */
+	void OnStartJump();
+	/** player released jump action */
+	void OnStopJump();
+
+	void TeleportPressed();
+	void TeleportReleased();
+
+	void RewindPressed();
+	void RewindReleased();
+
+	// --------------------------------------------------------
 
 	//////////////////////////////////////////////////////////////////////////
 	// Reading data

@@ -878,8 +878,7 @@ void AShooterCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerI
 
 	PlayerInputComponent->BindAction("Reload", IE_Pressed, this, &AShooterCharacter::OnReload);
 
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AShooterCharacter::OnStartJump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AShooterCharacter::OnStopJump);
+	
 
 	PlayerInputComponent->BindAction("Run", IE_Pressed, this, &AShooterCharacter::OnStartRunning);
 	PlayerInputComponent->BindAction("RunToggle", IE_Pressed, this, &AShooterCharacter::OnStartRunningToggle);
@@ -888,9 +887,15 @@ void AShooterCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerI
 	// --------------------------------------------------------
 	//						BOND EDIT
 	// --------------------------------------------------------
+	
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &AShooterCharacter::OnStartJump);
+	PlayerInputComponent->BindAction("Jump", IE_Released, this, &AShooterCharacter::OnStopJump);
 
-	PlayerInputComponent->BindAction("Teleport", IE_Pressed, this, &AShooterCharacter::OnTeleport);
-	PlayerInputComponent->BindAction("Rewind", IE_Pressed, this, &AShooterCharacter::OnRewind);
+	PlayerInputComponent->BindAction("Teleport", IE_Pressed, this, &AShooterCharacter::TeleportPressed);
+	PlayerInputComponent->BindAction("Teleport", IE_Released, this, &AShooterCharacter::TeleportReleased);
+
+	PlayerInputComponent->BindAction("Rewind", IE_Pressed, this, &AShooterCharacter::RewindPressed);
+	PlayerInputComponent->BindAction("Rewind", IE_Released, this, &AShooterCharacter::RewindReleased);
 
 	// --------------------------------------------------------
 
@@ -1081,14 +1086,43 @@ bool AShooterCharacter::IsRunning() const
 //			BOND: CUSTOM FUNCTIONS
 // --------------------------------------------------------
 
-void AShooterCharacter::OnTeleport() 
+void AShooterCharacter::OnStartJump()
+{
+	AShooterPlayerController* MyPC = Cast<AShooterPlayerController>(Controller);
+	if (MyPC && MyPC->IsGameInputAllowed())
+	{
+		bPressedJump = true;
+	}
+}
+
+void AShooterCharacter::OnStopJump()
+{
+	bPressedJump = false;
+	StopJumping();
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+void AShooterCharacter::TeleportPressed() 
 {
 	UE_LOG(LogTemp, Warning, TEXT("ACTIVATED TELEPORT"));
 }
 
-void AShooterCharacter::OnRewind()
+void AShooterCharacter::TeleportReleased()
+{
+
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+void AShooterCharacter::RewindPressed()
 {
 	UE_LOG(LogTemp, Warning, TEXT("ACTIVATED REWIND"));
+}
+
+void AShooterCharacter::RewindReleased()
+{
+
 }
 
 // --------------------------------------------------------
@@ -1174,21 +1208,6 @@ void AShooterCharacter::BeginDestroy()
 			USoundNodeLocalPlayer::GetLocallyControlledActorCache().Remove(UniqueID);
 		});
 	}
-}
-
-void AShooterCharacter::OnStartJump()
-{
-	AShooterPlayerController* MyPC = Cast<AShooterPlayerController>(Controller);
-	if (MyPC && MyPC->IsGameInputAllowed())
-	{
-		bPressedJump = true;
-	}
-}
-
-void AShooterCharacter::OnStopJump()
-{
-	bPressedJump = false;
-	StopJumping();
 }
 
 //////////////////////////////////////////////////////////////////////////
