@@ -77,18 +77,23 @@ void UShooterCharacterMovement::OnMovementUpdated(float DeltaSeconds, const FVec
         if(CanJetpack()){
             UE_LOG(LogTemp, Warning, TEXT("Entered Jetpack Call"));
             SetMovementMode(EMovementMode::MOVE_Custom, ECustomMovementMode::CMOVE_JETPACK);
+            bInAir = true;
         }
     }
 
     if(bWantsToTeleport){
         if(CanTeleport()){
+            UE_LOG(LogTemp, Warning, TEXT("Entered Teleport Call"));
             SetMovementMode(EMovementMode::MOVE_Custom, ECustomMovementMode::CMOVE_TELEPORT);
+            bInAir = true;
         }
     }
 
     if(bWantsToRewind){
         if(CanRewind()){
+            UE_LOG(LogTemp, Warning, TEXT("Entered Rewind Call"));
             SetMovementMode(EMovementMode::MOVE_Custom, ECustomMovementMode::CMOVE_REWIND);
+            bInAir = true;
         }
     }
 
@@ -107,6 +112,14 @@ void UShooterCharacterMovement::OnMovementModeChanged(EMovementMode PreviousMove
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+    // In Air Check
+    if(PreviousMovementMode == EMovementMode::MOVE_Falling && MovementMode != EMovementMode::MOVE_Custom)
+    {
+        bInAir = false;
+    }
+
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
     // If previous movement was jetpacking
     if(PreviousMovementMode == EMovementMode::MOVE_Custom && PreviousCustomMode == ECustomMovementMode::CMOVE_JETPACK)
     {
@@ -117,12 +130,14 @@ void UShooterCharacterMovement::OnMovementModeChanged(EMovementMode PreviousMove
     // If previous movement was teleporting
     if(PreviousMovementMode == EMovementMode::MOVE_Custom && PreviousCustomMode == ECustomMovementMode::CMOVE_TELEPORT)
     {
+        UE_LOG(LogTemp, Warning, TEXT("Leaving Teleport Movement Mode"));
         SetTeleporting(false);
     }
 
     // If previous movement was rewinding
     if(PreviousMovementMode == EMovementMode::MOVE_Custom && PreviousCustomMode == ECustomMovementMode::CMOVE_REWIND)
     {
+        UE_LOG(LogTemp, Warning, TEXT("Leaving Rewind Movement Mode"));
         SetRewinding(false);
     }
 
@@ -264,7 +279,42 @@ void UShooterCharacterMovement::PhysTeleport(float deltaTime, int32 Iterations)
     if(!VerifyCustomMovementMode(ECustomMovementMode::CMOVE_TELEPORT))
     {
         SetTeleporting(false);
+        StartNewPhysics(deltaTime, Iterations);
+        return;
     }
+
+    if(!bWantsToTeleport)
+    {
+        SetTeleporting(false);
+        SetMovementMode(EMovementMode::MOVE_Falling);
+        StartNewPhysics(deltaTime, Iterations);
+        return;
+    }
+
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    ACharacter* currentChar = UCharacterMovementComponent::GetCharacterOwner();
+    vPreTeleportLocation = currentChar->GetActorLocation();
+
+    FVector forwardVector;
+
+    if(bInAir)
+    {
+        forwardVector = UGameplayStatics::GetPlayerCameraManager(currentChar, 0)->GetActorForwardVector();
+    }
+    else
+    {
+        forwardVector = currentChar->GetActorForwardVector();
+    }
+
+    
+    forwardVector *= TeleportDistance;
+    forwardVector.Z += fTeleportOffsetZ;
+
+    vPostTeleportLocation = vPreTeleportLocation + forwardVector;
+
+    currentChar->GetCapsuleComponent()->USceneComponent::SetWorldLocation(vPostTeleportLocation, true, 0, ETeleportType::TeleportPhysics);
+
 }
 
 void UShooterCharacterMovement::execSetTeleporting(bool wantsToTeleport)
@@ -274,7 +324,7 @@ void UShooterCharacterMovement::execSetTeleporting(bool wantsToTeleport)
 
 bool UShooterCharacterMovement::CanTeleport()
 {
-	if(!bIsTeleporting) {
+	if(!IsTeleporting()) {
 		return true;
 	}
     return false;
@@ -297,9 +347,13 @@ void UShooterCharacterMovement::SetTeleporting(bool wantsToTeleport)
 	}
 }
 
-void UShooterCharacterMovement::IsTeleporting()
+bool UShooterCharacterMovement::IsTeleporting()
 {
-    
+    if(MovementMode == EMovementMode::MOVE_Custom && CustomMovementMode == ECustomMovementMode::CMOVE_TELEPORT)
+    {
+        return true;
+    }
+    return false;
 }
 
 //------------------------------------------------------
@@ -312,7 +366,21 @@ void UShooterCharacterMovement::PhysRewind(float deltaTime, int32 Iterations)
     if(!VerifyCustomMovementMode(ECustomMovementMode::CMOVE_REWIND))
     {
         SetRewinding(false);
+        StartNewPhysics(deltaTime, Iterations);
+        return;
     }
+
+    if(!bWantsToRewind)
+    {
+        SetRewinding(false);
+        SetMovementMode(EMovementMode::MOVE_Falling);
+        StartNewPhysics(deltaTime, Iterations);
+        return;
+    }
+
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    UE_LOG(LogTemp, Warning, TEXT("Sitting in PhysRewind Now"));
 }
 
 void UShooterCharacterMovement::execSetRewinding(bool wantsToRewind)
@@ -322,7 +390,7 @@ void UShooterCharacterMovement::execSetRewinding(bool wantsToRewind)
 
 bool UShooterCharacterMovement::CanRewind()
 {
-	if(!bIsRewinding)
+	if(!IsRewinding())
 	{
 		return true;
 	}
@@ -346,7 +414,11 @@ void UShooterCharacterMovement::SetRewinding(bool wantsToRewind)
 	}
 }
 
-void UShooterCharacterMovement::IsRewinding()
+bool UShooterCharacterMovement::IsRewinding()
 {
-    
+    if(MovementMode == EMovementMode::MOVE_Custom && CustomMovementMode == ECustomMovementMode::CMOVE_REWIND)
+    {
+        return true;
+    }
+    return false;
 }

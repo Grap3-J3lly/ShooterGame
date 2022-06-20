@@ -51,6 +51,9 @@ class UShooterCharacterMovement : public UCharacterMovementComponent
 	// Teleport Focus
 	bool bWantsToTeleport : 1;
 	bool bIsTeleporting = false;
+	bool bInAir = false;
+
+	float fTeleportOffsetZ = 100.0f;
 
 	FVector vPreTeleportLocation;
 	FVector vPostTeleportLocation;
@@ -77,7 +80,7 @@ public:
 
 	// Teleport Focus
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Custom|Teleport")
-		float TeleportDistance = 1000.0f;
+		float TeleportDistance = 250.0f;
 
 	// Rewind Focus
 
@@ -157,7 +160,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 		void SetTeleporting(bool wantsToTeleport);
 	UFUNCTION(BlueprintCallable)
-		void IsTeleporting();
+		bool IsTeleporting();
 
 	//------------------------------------------------------
     //				REWIND FUNCTIONS
@@ -178,6 +181,6 @@ public:
 	UFUNCTION(BlueprintCallable)
 		void SetRewinding(bool wantsToRewind);
 	UFUNCTION(BlueprintCallable)
-		void IsRewinding();
+		bool IsRewinding();
 };
 
