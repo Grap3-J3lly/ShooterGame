@@ -11,6 +11,9 @@ UShooterCharacterMovement::UShooterCharacterMovement(const FObjectInitializer& O
 {
 }
 
+//------------------------------------------------------
+//                  OVERRIDES
+//------------------------------------------------------
 
 float UShooterCharacterMovement::GetMaxSpeed() const
 {
@@ -32,74 +35,82 @@ float UShooterCharacterMovement::GetMaxSpeed() const
 	return MaxSpeed;
 }
 
-//------------------------------------------------------
-//                  OVERRIDES
-//------------------------------------------------------
-
 void UShooterCharacterMovement::TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-    if(EMovementMode::MOVE_Walking && fCurrentFuel != JetpackMaxFuel)
+    if(MovementMode == EMovementMode::MOVE_Walking && fCurrentFuel != JetpackMaxFuel)
     {
         fCurrentFuel = JetpackMaxFuel;
+    }
+
+    if(fCurrentFuel >= 0)
+    {
+        fCurrentFuel = FMath::Clamp<float>(fCurrentFuel - .005f, 0, 1);
     }
 }
 
 void UShooterCharacterMovement::PhysCustom(float deltaTime, int32 Iterations)
 {
-    // if(CustomMovementMode == ECustomMovementMode::CMOVE_JETPACK)
-    // {
-    //     PhysJetpack(deltaTime, Iterations);
-    // }
+    if(CustomMovementMode == ECustomMovementMode::CMOVE_JETPACK)
+    {
+        PhysJetpack(deltaTime, Iterations);
+    }
 
-    // if(CustomMovementMode == ECustomMovementMode::CMOVE_TELEPORT)
-    // {
-    //     PhysTeleport(deltaTime, Iterations);
-    // }
+    if(CustomMovementMode == ECustomMovementMode::CMOVE_TELEPORT)
+    {
+        PhysTeleport(deltaTime, Iterations);
+    }
 
-    // if(CustomMovementMode == ECustomMovementMode::CMOVE_REWIND)
-    // {
-    //     PhysRewind(deltaTime, Iterations);
-    // }
+    if(CustomMovementMode == ECustomMovementMode::CMOVE_REWIND)
+    {
+        PhysRewind(deltaTime, Iterations);
+    }
 
     Super::PhysCustom(deltaTime, Iterations);
 }
 
 void UShooterCharacterMovement::OnMovementUpdated(float DeltaSeconds, const FVector & OldLocation, const FVector & OldVelocity)
 {
-    // if(bWantsToJetpack) {
-    //     if(CanJetpack()){
-    //         SetMovementMode(EMovementMode::MOVE_Custom, ECustomMovementMode::CMOVE_JETPACK);
-    //     }
-    // }
-
-    // if(bWantsToTeleport){
-    //     if(CanTeleport()){
-    //         SetMovementMode(EMovementMode::MOVE_Custom, ECustomMovementMode::CMOVE_TELEPORT);
-    //     }
-    // }
-
-    // if(bWantsToRewind){
-    //     if(CanRewind()){
-    //         SetMovementMode(EMovementMode::MOVE_Custom, ECustomMovementMode::CMOVE_REWIND);
-    //     }
-    // }
-
     Super::OnMovementUpdated(DeltaSeconds, OldLocation, OldVelocity);
+
+    if(bWantsToJetpack) {
+        if(CanJetpack()){
+            UE_LOG(LogTemp, Warning, TEXT("Entered Jetpack Call"));
+            SetMovementMode(EMovementMode::MOVE_Custom, ECustomMovementMode::CMOVE_JETPACK);
+        }
+    }
+
+    if(bWantsToTeleport){
+        if(CanTeleport()){
+            SetMovementMode(EMovementMode::MOVE_Custom, ECustomMovementMode::CMOVE_TELEPORT);
+        }
+    }
+
+    if(bWantsToRewind){
+        if(CanRewind()){
+            SetMovementMode(EMovementMode::MOVE_Custom, ECustomMovementMode::CMOVE_REWIND);
+        }
+    }
+
 }
 
 void UShooterCharacterMovement::OnMovementModeChanged(EMovementMode PreviousMovementMode, uint8 PreviousCustomMode)
 {
+    Super::OnMovementModeChanged(PreviousMovementMode, PreviousCustomMode);
+
     // If nothing actually changed
     if(PreviousMovementMode == MovementMode && PreviousCustomMode == CustomMovementMode)
     {
-        UCharacterMovementComponent::OnMovementModeChanged(PreviousMovementMode, PreviousCustomMode);
+        Super::OnMovementModeChanged(PreviousMovementMode, PreviousCustomMode);
         return;
     }
+
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     // If previous movement was jetpacking
     if(PreviousMovementMode == EMovementMode::MOVE_Custom && PreviousCustomMode == ECustomMovementMode::CMOVE_JETPACK)
     {
+        UE_LOG(LogTemp, Warning, TEXT("Leaving Jetpack Movement Mode"));
         SetJetpacking(false);
     }
 
@@ -115,7 +126,25 @@ void UShooterCharacterMovement::OnMovementModeChanged(EMovementMode PreviousMove
         SetRewinding(false);
     }
 
-	Super::OnMovementModeChanged(PreviousMovementMode, PreviousCustomMode);
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    // If movement mode is now jetpack
+    if(VerifyCustomMovementMode(ECustomMovementMode::CMOVE_JETPACK))
+    {
+
+    }
+
+    // If movement mode is now teleport
+    if(VerifyCustomMovementMode(ECustomMovementMode::CMOVE_TELEPORT))
+    {
+
+    }
+
+    // If movement mode is now rewind
+    if(VerifyCustomMovementMode(ECustomMovementMode::CMOVE_REWIND))
+    {
+
+    }
 
 }
 
@@ -148,6 +177,18 @@ bool UShooterCharacterMovement::VerifyCustomMovementMode(uint8 currentMode) cons
     return false;
 }
 
+void UShooterCharacterMovement::ToggleGravityScale(bool gravityActive)
+{
+    if(gravityActive)
+    {
+        GravityScale = 0.0;
+    }
+    else if(!gravityActive)
+    {
+        GravityScale = 1.0;
+    }
+}
+
 //------------------------------------------------------
 //				JETPACK FUNCTIONS
 //------------------------------------------------------
@@ -163,13 +204,24 @@ void UShooterCharacterMovement::PhysJetpack(float deltaTime, int32 Iterations)
         return;
     }
 
-    if(!bWantsToJetpack)
+    if(!bWantsToJetpack || fCurrentFuel <= 0)
     {
         SetJetpacking(false);
         SetMovementMode(EMovementMode::MOVE_Falling);
         StartNewPhysics(deltaTime, Iterations);
         return;
     }
+
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    // Following logic originally outlined in Blueprint
+    float newZForce = JetpackThrust * deltaTime;
+    Velocity.Z += newZForce;
+
+    UE_LOG(LogTemp, Warning, TEXT("Inside PhysJetpack, CurrentFuel: %f"), fCurrentFuel);
+
+    PhysFalling(deltaTime, Iterations);
+
 }
 
 void UShooterCharacterMovement::execSetJetpacking(bool wantsToJetpack)
@@ -179,7 +231,7 @@ void UShooterCharacterMovement::execSetJetpacking(bool wantsToJetpack)
 
 bool UShooterCharacterMovement::CanJetpack()
 {
-    if(fCurrentFuel > 0) return true;
+    if(fCurrentFuel > 0 && MovementMode == EMovementMode::MOVE_Falling) return true;
     return false;
 }
 
@@ -189,11 +241,17 @@ void UShooterCharacterMovement::SetJetpacking(bool wantsToJetpack)
     {
         execSetJetpacking(wantsToJetpack);
     }
+
+    ToggleGravityScale(wantsToJetpack);
 }
 
-void UShooterCharacterMovement::IsJetpacking()
+bool UShooterCharacterMovement::IsJetpacking()
 {
-    
+    if(MovementMode == EMovementMode::MOVE_Custom && CustomMovementMode == ECustomMovementMode::CMOVE_JETPACK)
+    {
+        return true;
+    }
+    return false;
 }
 
 //------------------------------------------------------
@@ -216,6 +274,9 @@ void UShooterCharacterMovement::execSetTeleporting(bool wantsToTeleport)
 
 bool UShooterCharacterMovement::CanTeleport()
 {
+	if(!bIsTeleporting) {
+		return true;
+	}
     return false;
 }
 
@@ -225,6 +286,15 @@ void UShooterCharacterMovement::SetTeleporting(bool wantsToTeleport)
     {
         execSetTeleporting(wantsToTeleport);
     }
+
+	if(wantsToTeleport)
+	{
+		bIsTeleporting = true;
+	}
+	else if(!wantsToTeleport)
+	{
+		bIsTeleporting = false;
+	}
 }
 
 void UShooterCharacterMovement::IsTeleporting()
@@ -252,6 +322,10 @@ void UShooterCharacterMovement::execSetRewinding(bool wantsToRewind)
 
 bool UShooterCharacterMovement::CanRewind()
 {
+	if(!bIsRewinding)
+	{
+		return true;
+	}
     return false;
 }
 
@@ -261,6 +335,15 @@ void UShooterCharacterMovement::SetRewinding(bool wantsToRewind)
     {
         execSetRewinding(wantsToRewind);
     }
+
+	if(wantsToRewind)
+	{
+		bIsRewinding = true;
+	}
+	else if(!wantsToRewind)
+	{
+		bIsRewinding = false;
+	}
 }
 
 void UShooterCharacterMovement::IsRewinding()

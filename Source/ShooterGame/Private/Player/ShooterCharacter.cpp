@@ -1093,12 +1093,33 @@ void AShooterCharacter::OnStartJump()
 	{
 		bPressedJump = true;
 	}
+
+	UShooterCharacterMovement* movementComponent = Cast<UShooterCharacterMovement>(GetCharacterMovement());
+	if(movementComponent)
+	{
+		if(!HasAuthority())
+		{
+			movementComponent->ServerSetJetpackingRPC(true);
+		}
+		movementComponent->SetJetpacking(true);
+	}
+
 }
 
 void AShooterCharacter::OnStopJump()
 {
 	bPressedJump = false;
 	StopJumping();
+
+	UShooterCharacterMovement* movementComponent = Cast<UShooterCharacterMovement>(GetCharacterMovement());
+	if(movementComponent)
+	{
+		if(!HasAuthority())
+		{
+			movementComponent->ServerSetJetpackingRPC(false);
+		}
+		movementComponent->SetJetpacking(false);
+	}
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1106,11 +1127,29 @@ void AShooterCharacter::OnStopJump()
 void AShooterCharacter::TeleportPressed() 
 {
 	UE_LOG(LogTemp, Warning, TEXT("ACTIVATED TELEPORT"));
+	UShooterCharacterMovement* movementComponent = Cast<UShooterCharacterMovement>(GetCharacterMovement());
+	if(movementComponent)
+	{
+		if(!HasAuthority())
+		{
+			movementComponent->ServerSetTeleportingRPC(true);
+		}
+		movementComponent->SetTeleporting(true);
+	}
 }
 
 void AShooterCharacter::TeleportReleased()
 {
-
+	UE_LOG(LogTemp, Warning, TEXT("DEACTIVATED TELEPORT"));
+	UShooterCharacterMovement* movementComponent = Cast<UShooterCharacterMovement>(GetCharacterMovement());
+	if(movementComponent)
+	{
+		if(!HasAuthority())
+		{
+			movementComponent->ServerSetTeleportingRPC(false);
+		}
+		movementComponent->SetTeleporting(false);
+	}
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1118,11 +1157,29 @@ void AShooterCharacter::TeleportReleased()
 void AShooterCharacter::RewindPressed()
 {
 	UE_LOG(LogTemp, Warning, TEXT("ACTIVATED REWIND"));
+	UShooterCharacterMovement* movementComponent = Cast<UShooterCharacterMovement>(GetCharacterMovement());
+	if(movementComponent)
+	{
+		if(!HasAuthority())
+		{
+			movementComponent->ServerSetRewindingRPC(true);
+		}
+		movementComponent->SetRewinding(true);
+	}
 }
 
 void AShooterCharacter::RewindReleased()
 {
-
+	UE_LOG(LogTemp, Warning, TEXT("DEACTIVATED REWIND"));
+	UShooterCharacterMovement* movementComponent = Cast<UShooterCharacterMovement>(GetCharacterMovement());
+	if(movementComponent)
+	{
+		if(!HasAuthority())
+		{
+			movementComponent->ServerSetRewindingRPC(false);
+		}
+		movementComponent->SetRewinding(false);
+	}
 }
 
 // --------------------------------------------------------

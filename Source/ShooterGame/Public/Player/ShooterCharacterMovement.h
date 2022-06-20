@@ -50,12 +50,14 @@ class UShooterCharacterMovement : public UCharacterMovementComponent
 
 	// Teleport Focus
 	bool bWantsToTeleport : 1;
+	bool bIsTeleporting = false;
 
 	FVector vPreTeleportLocation;
 	FVector vPostTeleportLocation;
 
 	// Rewind Focus
 	bool bWantsToRewind : 1;
+	bool bIsRewinding = false;
 
 	//------------------------------------------------------
     //                  PROPERTIES
@@ -113,6 +115,7 @@ public:
 private:
 	
 	bool VerifyCustomMovementMode(uint8 currentMode) const;
+	void ToggleGravityScale(bool gravityActive);
 
 	//------------------------------------------------------
     //				JETPACK FUNCTIONS
@@ -133,7 +136,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 		void SetJetpacking(bool wantsToJetpack);
 	UFUNCTION(BlueprintCallable)
-		void IsJetpacking();
+		bool IsJetpacking();
 
 	//------------------------------------------------------
     //				TELEPORT FUNCTIONS
