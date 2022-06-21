@@ -62,6 +62,14 @@ class UShooterCharacterMovement : public UCharacterMovementComponent
 	bool bWantsToRewind : 1;
 	bool bIsRewinding = false;
 
+	float fRemainingDuration;
+	float fRemainingResetDuration;
+
+	TArray<FVector> aActorLocation;
+	TArray<FVector> aActorVelocity;
+
+	TArray<FRotator> aActorRotation;
+
 	//------------------------------------------------------
     //                  PROPERTIES
     //------------------------------------------------------
@@ -83,6 +91,12 @@ public:
 		float TeleportDistance = 250.0f;
 
 	// Rewind Focus
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Custom|Rewind")
+		float RewindDuration = 5.0f;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Custom|Rewind")
+		float RewindResetDuration = 5.0f;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Custom|Rewind")
+		float RewindTickValue = .01f;
 
 	//------------------------------------------------------
     //                  OVERRIDES

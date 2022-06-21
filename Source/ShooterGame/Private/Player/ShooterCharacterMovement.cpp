@@ -47,6 +47,46 @@ void UShooterCharacterMovement::TickComponent(float DeltaTime, enum ELevelTick T
     {
         fCurrentFuel = FMath::Clamp<float>(fCurrentFuel - .005f, 0, 1);
     }
+
+    if(fRemainingDuration <= 0 && !IsRewinding())
+    {
+        if(fRemainingResetDuration <= 0)
+        {
+            fRemainingResetDuration = RewindResetDuration;
+            fRemainingDuration = RewindDuration;
+        }
+        fRemainingResetDuration -= RewindTickValue;
+    }
+    
+    if(fRemainingDuration > 0 && IsRewinding())
+    {
+        fRemainingDuration -= RewindTickValue;
+    }
+
+    // Record movement for rewind
+    if(!bWantsToRewind)
+    {
+
+        FVector tempLocation, tempVelocity;
+        FRotator tempRotation;
+
+        ACharacter* currentChar = UCharacterMovementComponent::GetCharacterOwner();
+
+        tempLocation = currentChar->GetActorLocation();
+        tempVelocity = Velocity;
+        tempRotation = currentChar->GetController()->GetControlRotation();
+
+        aActorLocation.Add(tempLocation);
+        aActorVelocity.Add(tempVelocity);
+        aActorRotation.Add(tempRotation);
+
+        // Attempt at garbage collection
+        tempLocation.Set(NULL, NULL, NULL);
+        tempVelocity.Set(NULL, NULL, NULL);
+        tempRotation = FRotator(NULL, NULL, NULL);
+        
+    }
+
 }
 
 void UShooterCharacterMovement::PhysCustom(float deltaTime, int32 Iterations)
@@ -138,6 +178,12 @@ void UShooterCharacterMovement::OnMovementModeChanged(EMovementMode PreviousMove
     if(PreviousMovementMode == EMovementMode::MOVE_Custom && PreviousCustomMode == ECustomMovementMode::CMOVE_REWIND)
     {
         UE_LOG(LogTemp, Warning, TEXT("Leaving Rewind Movement Mode"));
+
+        // Give input control back
+        ACharacter* currentChar = UCharacterMovementComponent::GetCharacterOwner();
+        currentChar->GetController()->ResetIgnoreMoveInput();
+        currentChar->GetController()->ResetIgnoreLookInput();
+
         SetRewinding(false);
     }
 
@@ -158,7 +204,9 @@ void UShooterCharacterMovement::OnMovementModeChanged(EMovementMode PreviousMove
     // If movement mode is now rewind
     if(VerifyCustomMovementMode(ECustomMovementMode::CMOVE_REWIND))
     {
-
+        //UE_LOG(LogTemp, Warning, TEXT("Entering Rewind Movement Mode"));
+        fRemainingDuration = RewindDuration;
+        fRemainingResetDuration = 0;
     }
 
 }
@@ -276,6 +324,8 @@ bool UShooterCharacterMovement::IsJetpacking()
 // PhysTeleport is based off of the CharacterMovementComponent Phys functions (PhysWalking, PhysRunning, etc.)
 void UShooterCharacterMovement::PhysTeleport(float deltaTime, int32 Iterations)
 {
+    // Exit Conditions
+
     if(!VerifyCustomMovementMode(ECustomMovementMode::CMOVE_TELEPORT))
     {
         SetTeleporting(false);
@@ -298,6 +348,9 @@ void UShooterCharacterMovement::PhysTeleport(float deltaTime, int32 Iterations)
 
     FVector forwardVector;
 
+    // Attempted to account for when teleport is activated while looking at the floor.
+    // Ideally, teleport would still work but instead of teleporting in the direction that the camera is facing,
+    // it would teleport forward based off of where the character is facing. 
     if(bInAir)
     {
         forwardVector = UGameplayStatics::GetPlayerCameraManager(currentChar, 0)->GetActorForwardVector();
@@ -363,15 +416,22 @@ bool UShooterCharacterMovement::IsTeleporting()
 // PhysRewind is based off of the CharacterMovementComponent Phys functions (PhysWalking, PhysRunning, etc.)
 void UShooterCharacterMovement::PhysRewind(float deltaTime, int32 Iterations)
 {
+    ACharacter* currentChar = UCharacterMovementComponent::GetCharacterOwner();
+    APlayerCameraManager* thisCharacterCameraManager = UGameplayStatics::GetPlayerCameraManager(currentChar, 0);
+
     if(!VerifyCustomMovementMode(ECustomMovementMode::CMOVE_REWIND))
     {
+        UE_LOG(LogTemp, Warning, TEXT("Sitting in PhysRewind First If"));
+
         SetRewinding(false);
         StartNewPhysics(deltaTime, Iterations);
         return;
     }
 
-    if(!bWantsToRewind)
+    if(!bWantsToRewind || fRemainingDuration <= 0)
     {
+        UE_LOG(LogTemp, Warning, TEXT("Sitting in PhysRewind Second If"));
+
         SetRewinding(false);
         SetMovementMode(EMovementMode::MOVE_Falling);
         StartNewPhysics(deltaTime, Iterations);
@@ -380,7 +440,57 @@ void UShooterCharacterMovement::PhysRewind(float deltaTime, int32 Iterations)
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    UE_LOG(LogTemp, Warning, TEXT("Sitting in PhysRewind Now"));
+    UE_LOG(LogTemp, Warning, TEXT("Sitting in PhysRewind Now: %f"), fRemainingDuration);
+
+    // Temporarily lock input
+    currentChar->GetController()->SetIgnoreMoveInput(true);
+    currentChar->GetController()->SetIgnoreLookInput(true);
+
+
+    // Get most recent position and details
+    FVector tempLocation = aActorLocation.Last();
+    FVector tempVelocity = aActorVelocity.Last();
+    FRotator tempRotation = aActorRotation.Last();
+
+    // Set location, velocity, and camera rotation to previous value
+    currentChar->GetCapsuleComponent()->USceneComponent::SetWorldLocation(tempLocation, false, 0, ETeleportType::None);
+    Velocity = tempVelocity;
+    //thisCharacterCameraManager->SetActorRotation(tempRotation, ETeleportType::None);
+    currentChar->GetController()->SetControlRotation(tempRotation);
+
+    // Remove last value from list
+    if(aActorLocation.Num()-1 > 0)
+    {
+        aActorLocation.RemoveAt(aActorLocation.Num()-1);
+    }
+    else
+    {
+        bWantsToRewind = false;
+    }
+
+    if(aActorVelocity.Num()-1 > 0)
+    {
+        aActorVelocity.RemoveAt(aActorVelocity.Num()-1);
+    }
+    else
+    {
+        bWantsToRewind = false;
+    }
+
+    if(aActorRotation.Num()-1 > 0)
+    {
+        aActorRotation.RemoveAt(aActorRotation.Num()-1);
+    }
+    else
+    {
+        bWantsToRewind = false;
+    }
+
+    // Attempt at garbage collection
+        tempLocation.Set(NULL, NULL, NULL);
+        tempVelocity.Set(NULL, NULL, NULL);
+        tempRotation = FRotator(NULL, NULL, NULL);
+
 }
 
 void UShooterCharacterMovement::execSetRewinding(bool wantsToRewind)
@@ -390,7 +500,8 @@ void UShooterCharacterMovement::execSetRewinding(bool wantsToRewind)
 
 bool UShooterCharacterMovement::CanRewind()
 {
-	if(!IsRewinding())
+    //UE_LOG(LogTemp, Warning, TEXT("Sitting in CanRewind Now: %f"), fRemainingResetDuration);
+	if(!IsRewinding() && fRemainingDuration > 0)
 	{
 		return true;
 	}
