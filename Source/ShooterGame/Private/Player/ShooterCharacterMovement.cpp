@@ -38,7 +38,9 @@ float UShooterCharacterMovement::GetMaxSpeed() const
 void UShooterCharacterMovement::TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-    if(MovementMode == EMovementMode::MOVE_Walking && fCurrentFuel != JetpackMaxFuel)
+
+    // Jetpack Resets
+    if(MovementMode != EMovementMode::MOVE_Custom && fCurrentFuel != JetpackMaxFuel)
     {
         fCurrentFuel = JetpackMaxFuel;
     }
@@ -48,6 +50,7 @@ void UShooterCharacterMovement::TickComponent(float DeltaTime, enum ELevelTick T
         fCurrentFuel = FMath::Clamp<float>(fCurrentFuel - .005f, 0, 1);
     }
 
+    // Rewind Tracking
     if(fRemainingDuration <= 0 && !IsRewinding())
     {
         if(fRemainingResetDuration <= 0)
@@ -74,7 +77,7 @@ void UShooterCharacterMovement::TickComponent(float DeltaTime, enum ELevelTick T
 
         tempLocation = currentChar->GetActorLocation();
         tempVelocity = Velocity;
-        tempRotation = currentChar->GetController()->GetControlRotation();
+        tempRotation = currentChar->GetControlRotation();
 
         aActorLocation.Add(tempLocation);
         aActorVelocity.Add(tempVelocity);
@@ -141,7 +144,7 @@ void UShooterCharacterMovement::OnMovementUpdated(float DeltaSeconds, const FVec
 
 void UShooterCharacterMovement::OnMovementModeChanged(EMovementMode PreviousMovementMode, uint8 PreviousCustomMode)
 {
-    Super::OnMovementModeChanged(PreviousMovementMode, PreviousCustomMode);
+    //Super::OnMovementModeChanged(PreviousMovementMode, PreviousCustomMode);
 
     // If nothing actually changed
     if(PreviousMovementMode == MovementMode && PreviousCustomMode == CustomMovementMode)
@@ -209,25 +212,71 @@ void UShooterCharacterMovement::OnMovementModeChanged(EMovementMode PreviousMove
         fRemainingResetDuration = 0;
     }
 
+    Super::OnMovementModeChanged(PreviousMovementMode, PreviousCustomMode);
+
 }
 
 //------------------------------------------------------
 //                  NETWORKING
 //------------------------------------------------------
 
-void UShooterCharacterMovement::ServerSetJetpackingRPC(bool wantsToJetpack)
+FNetworkPredictionData_Client*
+UShooterCharacterMovement::GetPredictionData_Client() const
 {
-    
+    check(PawnOwner != NULL);
+
+    if(!ClientPredictionData)
+    {
+        UShooterCharacterMovement* MutableThis = const_cast<UShooterCharacterMovement*>(this);
+        MutableThis->ClientPredictionData = new FNetworkPredictionData_Client_ShooterCharacterMovement(*this);
+    }
+    return ClientPredictionData;
 }
 
-void UShooterCharacterMovement::ServerSetTeleportingRPC(bool wantsToTeleport)
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+bool UShooterCharacterMovement::ServerSetJetpackingRPC_Validate(bool wantsToJetpack)
 {
-    
+    return true;
+}
+void UShooterCharacterMovement::ServerSetJetpackingRPC_Implementation(bool wantsToJetpack)
+{
+    execSetJetpacking(wantsToJetpack);
 }
 
-void UShooterCharacterMovement::ServerSetRewindingRPC(bool wantsToRewind)
+bool UShooterCharacterMovement::ServerSetTeleportingRPC_Validate(bool wantsToTeleport)
 {
-    
+    return true;
+}
+void UShooterCharacterMovement::ServerSetTeleportingRPC_Implementation(bool wantsToTeleport)
+{
+    execSetTeleporting(wantsToTeleport);
+}
+
+bool UShooterCharacterMovement::ServerSetRewindingRPC_Validate(bool wantsToRewind)
+{
+    return true;
+}
+void UShooterCharacterMovement::ServerSetRewindingRPC_Implementation(bool wantsToRewind)
+{
+    execSetRewinding(wantsToRewind);
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+void UShooterCharacterMovement::ClientSetJetpackingRPC_Implementation(bool wantsToJetpack)
+{
+    execSetJetpacking(wantsToJetpack);
+}
+
+void UShooterCharacterMovement::ClientSetTeleportingRPC_Implementation(bool wantsToTeleport)
+{
+    execSetTeleporting(wantsToTeleport);
+}
+
+void UShooterCharacterMovement::ClientSetRewindingRPC_Implementation(bool wantsToRewind)
+{
+    execSetRewinding(wantsToRewind);
 }
 
 //------------------------------------------------------
@@ -294,7 +343,7 @@ void UShooterCharacterMovement::execSetJetpacking(bool wantsToJetpack)
 
 bool UShooterCharacterMovement::CanJetpack()
 {
-    if(fCurrentFuel > 0 && MovementMode == EMovementMode::MOVE_Falling) return true;
+    if(fCurrentFuel > 0 && MovementMode != EMovementMode::MOVE_Custom) return true;
     return false;
 }
 
@@ -306,6 +355,22 @@ void UShooterCharacterMovement::SetJetpacking(bool wantsToJetpack)
     }
 
     ToggleGravityScale(wantsToJetpack);
+
+
+    // - - - - - - - - - Network Elements - - - - - - - - - - - - -
+
+    if(!GetOwner() || !GetPawnOwner())
+    {return;}
+
+    if(!GetOwner()->HasAuthority() && GetPawnOwner()->IsLocallyControlled())
+    {
+        ServerSetJetpackingRPC(bWantsToJetpack);
+    }
+    else if(GetOwner()->HasAuthority() && !GetPawnOwner()->IsLocallyControlled())
+    {
+        ClientSetJetpackingRPC(bWantsToJetpack);
+    }
+
 }
 
 bool UShooterCharacterMovement::IsJetpacking()
@@ -398,6 +463,20 @@ void UShooterCharacterMovement::SetTeleporting(bool wantsToTeleport)
 	{
 		bIsTeleporting = false;
 	}
+
+    // - - - - - - - - - Network Elements - - - - - - - - - - - - -
+
+    if(!GetOwner() || !GetPawnOwner())
+    {return;}
+
+    if(!GetOwner()->HasAuthority() && GetPawnOwner()->IsLocallyControlled())
+    {
+        ServerSetTeleportingRPC(bWantsToTeleport);
+    }
+    else if(GetOwner()->HasAuthority() && !GetPawnOwner()->IsLocallyControlled())
+    {
+        ClientSetTeleportingRPC(bWantsToTeleport);
+    }
 }
 
 bool UShooterCharacterMovement::IsTeleporting()
@@ -416,8 +495,6 @@ bool UShooterCharacterMovement::IsTeleporting()
 // PhysRewind is based off of the CharacterMovementComponent Phys functions (PhysWalking, PhysRunning, etc.)
 void UShooterCharacterMovement::PhysRewind(float deltaTime, int32 Iterations)
 {
-    ACharacter* currentChar = UCharacterMovementComponent::GetCharacterOwner();
-    APlayerCameraManager* thisCharacterCameraManager = UGameplayStatics::GetPlayerCameraManager(currentChar, 0);
 
     if(!VerifyCustomMovementMode(ECustomMovementMode::CMOVE_REWIND))
     {
@@ -440,9 +517,10 @@ void UShooterCharacterMovement::PhysRewind(float deltaTime, int32 Iterations)
 
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    UE_LOG(LogTemp, Warning, TEXT("Sitting in PhysRewind Now: %f"), fRemainingDuration);
+    ACharacter* currentChar = UCharacterMovementComponent::GetCharacterOwner();
+    APlayerCameraManager* thisCharacterCameraManager = UGameplayStatics::GetPlayerCameraManager(currentChar, 0);
 
-    // Temporarily lock input
+    // Temporarily lock move/look input
     currentChar->GetController()->SetIgnoreMoveInput(true);
     currentChar->GetController()->SetIgnoreLookInput(true);
 
@@ -456,35 +534,24 @@ void UShooterCharacterMovement::PhysRewind(float deltaTime, int32 Iterations)
     currentChar->GetCapsuleComponent()->USceneComponent::SetWorldLocation(tempLocation, false, 0, ETeleportType::None);
     Velocity = tempVelocity;
     //thisCharacterCameraManager->SetActorRotation(tempRotation, ETeleportType::None);
-    currentChar->GetController()->SetControlRotation(tempRotation);
+    //currentChar->GetController()->SetControlRotation(tempRotation);
+    GetPawnOwner()->Controller->SetControlRotation(tempRotation);
 
     // Remove last value from list
-    if(aActorLocation.Num()-1 > 0)
-    {
-        aActorLocation.RemoveAt(aActorLocation.Num()-1);
-    }
+    if(aActorLocation.Num()-1 > 0) 
+    {aActorLocation.RemoveAt(aActorLocation.Num()-1);}
     else
-    {
-        bWantsToRewind = false;
-    }
+    {bWantsToRewind = false;}
 
     if(aActorVelocity.Num()-1 > 0)
-    {
-        aActorVelocity.RemoveAt(aActorVelocity.Num()-1);
-    }
+    {aActorVelocity.RemoveAt(aActorVelocity.Num()-1);}
     else
-    {
-        bWantsToRewind = false;
-    }
+    {bWantsToRewind = false;}
 
     if(aActorRotation.Num()-1 > 0)
-    {
-        aActorRotation.RemoveAt(aActorRotation.Num()-1);
-    }
+    {aActorRotation.RemoveAt(aActorRotation.Num()-1);}
     else
-    {
-        bWantsToRewind = false;
-    }
+    {bWantsToRewind = false;}
 
     // Attempt at garbage collection
         tempLocation.Set(NULL, NULL, NULL);
@@ -523,6 +590,20 @@ void UShooterCharacterMovement::SetRewinding(bool wantsToRewind)
 	{
 		bIsRewinding = false;
 	}
+
+    // - - - - - - - - - Network Elements - - - - - - - - - - - - -
+
+    if(!GetOwner() || !GetPawnOwner())
+    {return;}
+
+    if(!GetOwner()->HasAuthority() && GetPawnOwner()->IsLocallyControlled())
+    {
+        ServerSetRewindingRPC(bWantsToRewind);
+    }
+    else if(GetOwner()->HasAuthority() && !GetPawnOwner()->IsLocallyControlled())
+    {
+        ClientSetRewindingRPC(bWantsToRewind);
+    }
 }
 
 bool UShooterCharacterMovement::IsRewinding()
@@ -532,4 +613,84 @@ bool UShooterCharacterMovement::IsRewinding()
         return true;
     }
     return false;
+}
+
+//-----------------------------------------------------------------------------------
+//                ADDITIONAL NETWORK COMPONENT CLASS FUNCTIONS
+//-----------------------------------------------------------------------------------
+
+FNetworkPredictionData_Client_ShooterCharacterMovement::FNetworkPredictionData_Client_ShooterCharacterMovement(const UCharacterMovementComponent& ClientMovement)
+    : Super(ClientMovement)
+{
+
+}
+
+FSavedMovePtr FNetworkPredictionData_Client_ShooterCharacterMovement::AllocateNewMove()
+{
+    return FSavedMovePtr(new FSavedMove_ShooterCharacterMovement());
+}
+
+void FSavedMove_ShooterCharacterMovement::Clear()
+{
+    Super::Clear();
+    savedWantsToJetpack = false;
+    savedRemainingFuel = 1.0f;
+
+    savedWantsToTeleport = false;
+
+    savedWantsToRewind = false;
+    savedRemainingDuration = 0.0f;
+}
+
+uint8 FSavedMove_ShooterCharacterMovement::GetCompressedFlags() const
+{
+    return Super::GetCompressedFlags();
+}
+
+bool FSavedMove_ShooterCharacterMovement::CanCombineWith(const FSavedMovePtr & NewMove, ACharacter * Character, float MaxDelta) const
+{
+    if(savedWantsToJetpack != ((FSavedMove_ShooterCharacterMovement*)&NewMove)->savedWantsToJetpack)
+    {return false;}
+    if(savedRemainingFuel != ((FSavedMove_ShooterCharacterMovement*)&NewMove)->savedRemainingFuel)
+    {return false;}
+    if(savedWantsToTeleport != ((FSavedMove_ShooterCharacterMovement*)&NewMove)->savedWantsToTeleport)
+    {return false;}
+    if(savedWantsToRewind != ((FSavedMove_ShooterCharacterMovement*)&NewMove)->savedWantsToRewind)
+    {return false;}
+    if(savedRemainingDuration != ((FSavedMove_ShooterCharacterMovement*)&NewMove)->savedRemainingDuration)
+    {return false;}
+
+    return Super::CanCombineWith(NewMove, Character, MaxDelta);
+}
+
+void FSavedMove_ShooterCharacterMovement::SetMoveFor(ACharacter * Character, float InDeltaTime, FVector const & NewAccel, FNetworkPredictionData_Client_Character & ClientData)
+{
+    Super::SetMoveFor(Character, InDeltaTime, NewAccel, ClientData);
+    UShooterCharacterMovement* CharacterMovement = Cast<UShooterCharacterMovement>(Character->GetCharacterMovement());
+    if(CharacterMovement)
+    {
+        savedWantsToJetpack = CharacterMovement->bWantsToJetpack;
+        savedRemainingFuel = CharacterMovement->fCurrentFuel;
+
+        savedWantsToTeleport = CharacterMovement->bWantsToTeleport;
+
+        savedWantsToRewind = CharacterMovement->bWantsToRewind;
+        savedRemainingDuration = CharacterMovement->fRemainingDuration;
+    }
+}
+
+void FSavedMove_ShooterCharacterMovement::PrepMoveFor(ACharacter * Character)
+{
+    Super::PrepMoveFor(Character);
+    UShooterCharacterMovement* CharacterMovement = Cast<UShooterCharacterMovement>(Character->GetCharacterMovement());
+    if(CharacterMovement)
+    {
+        CharacterMovement->bWantsToJetpack = savedWantsToJetpack;
+        CharacterMovement->fCurrentFuel = savedRemainingFuel;
+
+        CharacterMovement->bWantsToTeleport = savedWantsToTeleport;
+
+        CharacterMovement->bWantsToRewind = savedWantsToRewind;
+        CharacterMovement->fRemainingDuration = savedRemainingDuration;
+    }
 }

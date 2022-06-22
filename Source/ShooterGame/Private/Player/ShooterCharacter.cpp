@@ -1170,16 +1170,7 @@ void AShooterCharacter::RewindPressed()
 
 void AShooterCharacter::RewindReleased()
 {
-	UE_LOG(LogTemp, Warning, TEXT("DEACTIVATED REWIND"));
-	// UShooterCharacterMovement* movementComponent = Cast<UShooterCharacterMovement>(GetCharacterMovement());
-	// if(movementComponent)
-	// {
-	// 	if(!HasAuthority())
-	// 	{
-	// 		movementComponent->ServerSetRewindingRPC(false);
-	// 	}
-	// 	movementComponent->SetRewinding(false);
-	// }
+
 }
 
 // --------------------------------------------------------

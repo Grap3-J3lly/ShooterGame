@@ -115,15 +115,25 @@ private:
     //                  NETWORKING
     //------------------------------------------------------
 
+private:
+	virtual FNetworkPredictionData_Client* GetPredictionData_Client() const override;
+
 public:
 
 	// Remote Procedure Calls (RPCs)
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable)
 		void ServerSetJetpackingRPC(bool wantsToJetpack);
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable)
 		void ServerSetTeleportingRPC(bool wantsToTeleport);
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(Server, Reliable, WithValidation, BlueprintCallable)
 		void ServerSetRewindingRPC(bool wantsToRewind);
+
+	UFUNCTION(Client, Reliable, BlueprintCallable)
+		void ClientSetJetpackingRPC(bool wantsToJetpack);
+	UFUNCTION(Client, Reliable, BlueprintCallable)
+		void ClientSetTeleportingRPC(bool wantsToTeleport);
+	UFUNCTION(Client, Reliable, BlueprintCallable)
+		void ClientSetRewindingRPC(bool wantsToRewind);
 
 	//------------------------------------------------------
     //				GENERAL FUNCTIONS
@@ -198,3 +208,50 @@ public:
 		bool IsRewinding();
 };
 
+//-----------------------------------------------------------------------------------
+//                  	ADDITIONAL NETWORK COMPONENT CLASSES
+//-----------------------------------------------------------------------------------
+
+// Handles saved moves from client in case Server calls to undo a move
+class FSavedMove_ShooterCharacterMovement : public FSavedMove_Character
+{
+	friend class UShooterCharacterMovement;
+
+public:
+
+	//------------------------------------------------------
+    //                  VARIABLES
+    //------------------------------------------------------
+
+	// Jetpack Focus
+	bool savedWantsToJetpack : 1;
+	float savedRemainingFuel;
+
+	// Teleport Focus
+	bool savedWantsToTeleport : 1;
+	
+	// Rewind Focus
+	bool savedWantsToRewind : 1;
+	float savedRemainingDuration;
+
+	//------------------------------------------------------
+    //                  OVERRIDES
+    //------------------------------------------------------
+
+	typedef FSavedMove_Character Super;
+	virtual void Clear() override;
+	virtual uint8 GetCompressedFlags() const override;
+	virtual bool CanCombineWith(const FSavedMovePtr& NewMove, ACharacter* Character, float MaxDelta) const override;
+	virtual void SetMoveFor(ACharacter* Character, float InDeltaTime, FVector const& NewAccel, class FNetworkPredictionData_Client_Character & ClientData) override;
+	virtual void PrepMoveFor(ACharacter* Character) override;
+
+};
+
+// Handles prediction data for a client.
+class FNetworkPredictionData_Client_ShooterCharacterMovement : public FNetworkPredictionData_Client_Character
+{
+public:
+	FNetworkPredictionData_Client_ShooterCharacterMovement(const UCharacterMovementComponent& ClientMovement);
+	typedef FNetworkPredictionData_Client_Character Super;
+	virtual FSavedMovePtr AllocateNewMove() override;
+};
